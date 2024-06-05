@@ -9,6 +9,18 @@
 <body>
     <header>
         <img src="./images/banner.jpg" alt="Header Image">
+        <script type="text/javascript">
+            const root = document.querySelector(':root')
+            const toggleTheme = () => {
+                if(root.classList.contains('dark')){
+                    root.classList.remove('dark')
+                }
+                else{
+                    root.classList.add('dark')
+                }
+            }
+            <!-- toggleTheme(); -->
+        </script>
     </header>
     <main>
         <h1>Māras dīķis</h1>
