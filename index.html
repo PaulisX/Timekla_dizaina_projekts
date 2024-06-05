@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mans ceļš uz Latvijas Universitāti</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        const root = document.querySelector(':root')
+        const toggleTheme = () => {
+            if(root.classList.contains('dark')){
+                root.classList.remove('dark')
+            }
+            else{
+                root.classList.add('dark')
+            }
+        }
+        <!-- toggleTheme(); -->
+    </script>
+</head>
+<body>
+    <header>
+        <img src="./images/banner.jpg" alt="Header Image">
+    </header>
+    <main>
+        <h1>Mans ceļš uz Latvijas Universitāti</h1>
+        <hr>
+        <p class="description">
+            Es studēju Latvijas Universitāte un dzīvoju uz Rīgas robežas, pie Mārupes, tāpēc, dienās kad ir labi laikapstākļi un uz universitāti nav jādodas agri no rīta es izvēlos braukt ar velosipēdu nevis publisko transportu. Pa ceļam uz universitāti es braucu garām dažādiem parkiem un interesantām, skaitām vietām.
+        </p>
+        <p class="description">
+            Ceļš kopā paņem 30 min, ir 6 km garš, satur 5 krustojumus ar luksoforu un 1 pazemes tuneli.
+        </p>
+        <hr>
+        
+        <section class="card-container">
+            <a href="./cela-sakums.html" class="card">
+                <img src="./images/cela-sakums.jpg" alt="Ceļa sākums">
+                <div class="card-content">
+                    <div class="inner">
+                        <h3>Ceļa sākums</h3>
+                        <p>
+                            Neliela ieliņa pie Mārupes robežas bez satiksmes.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="./maras-dikis.html" class="card">
+                <img src="./images/maras-dikis.jpg" alt="Māras dīķis">
+                <div class="card-content">
+                    <div class="inner">
+                        <h3>Māras dīķis</h3>
+                        <p>
+                            Skaists skats uz ezeru un parku no ielas.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="./arkadijas-parks.html" class="card">
+                <img src="./images/arkadijas-parks.jpg" alt="Arkādijas parks">
+                <div class="card-content">
+                    <div class="inner">
+                        <h3>Arkādijas parks</h3>
+                        <p>Ainavisks parks ar nelielu upīti un ūdenskritumu.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./akmens-tilts.html" class="card">
+                <img src="./images/akmens-tilts.jpg" alt="Akmens tilts">
+                <div class="card-content">
+                    <div class="inner">
+                        <h3>Akmens tilts</h3>
+                        <p>Tilts pār Daugavu, uz kura neērti nokļūt riteņbraucējam.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./vecriga.html" class="card">
+                <img src="./images/vecriga.jpg" alt="Melngalvju nams">
+                <div class="card-content">
+                    <div class="inner">
+                        <h3>Vecrīga</h3>
+                        <p>Skaista, bet ar bruģētam ielām un gājēju pilna.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./vecrigas-apbrauksana.html" class="card">
+                <img src="./images/vecrigas-apbrauksana.jpg" alt="Brīvības piemineklis">
+                <div class="card-content">
+                    <div class="inner">
+                        <h3>Vecrīgas apbraukšana</h3>
+                        <p>Skaists parks, kanāls, opera un riteņbraucēju josla.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./latvijas-universitate.html" class="card">
+                <img src="./images/latvijas-universitate.jpg" alt="Latvijas Universitāte">
+                <div class="card-content">
+                    <div class="inner">
+                        <h3>Latvijas Universitāte</h3>
+                        <p>Beidzot galā, bet riteni jāatstāj citā kvartālā.</p>
+                    </div>
+                </div>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <div style="display:flex; ">
+            <p> &copy; 2024 Paulis Kristofers Siks</p>
+            <span style="flex:1;"></span>
+            <button id="mode-toggle" onclick="toggleTheme()" style=""></button>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
